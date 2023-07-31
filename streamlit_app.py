@@ -8,3 +8,5 @@ my_cur = my_cnx.cursor()
 
 
 streamlit.title('Zena\'s Amazing Athleisure Catalog')
+
+my_cur.execute("select color_or_style from catalog_for_website") my_catalog = my_cur.fetchall()
