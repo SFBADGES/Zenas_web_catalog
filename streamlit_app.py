@@ -19,4 +19,4 @@ streamlit.write(df)
 
 # put the first column into a list
 color_list = df[0].values.tolist() 
-#print(color_list)
+print(color_list)
