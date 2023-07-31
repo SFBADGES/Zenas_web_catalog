@@ -1,6 +1,7 @@
 import streamlit
 streamlit.title('Zenas Athleisure')
 import snowflake.connector
+import pandas
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
 my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
