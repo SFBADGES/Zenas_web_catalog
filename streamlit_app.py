@@ -27,7 +27,7 @@ option = streamlit.selectbox('Pick a sweatsuit color or style:', list(color_list
 # use the option selected to go back and get all the info from the database
 
 my_cur.execute("select direct_url, price, size_list, upsell_product_desc from catalog_for_website where 
-color_or_style = 'Our warm, comfortable, ' + option + ' sweatsuit!'
+color_or_style = 'Our warm, comfortable, ' + option + ' sweatsuit!')
 df2 = my_cur.fetchone()
 
 streamlit.image( df2[0], width=400, caption= product_caption )
